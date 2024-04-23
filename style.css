@@ -1,0 +1,133 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd, ul {
+  margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  /* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+img {
+  vertical-align: middle;
+}
+/* General STYLE */
+:root {
+
+    --color1:rgb(32, 32, 71);
+    --color2:rgb(185, 185, 206);
+    --color3:white;
+
+    --sansserif: 'Inter', sans-serif;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Light.woff2') format('woff2'),
+       url('./assets/fonts/Inter-Light.woff') format('woff');
+  font-weight: 300;
+  font-display: swap; 
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Medium.woff2') format('woff2'),
+       url('./assets/fonts/Inter-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap; 
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Bold.woff2') format('woff2'),
+       url('./assets/fonts/Inter-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap; 
+}
+h1, h2, h3, ul {
+  padding:0;
+}
+.hide {
+  display:none;
+}
+.screen-reader-only {
+  position:absolute;
+  display:inline-block;
+  /* opacity:0; */
+  height:1px;
+  width:1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE 7+ only support clip without commas */
+  clip: rect(1px, 1px, 1px, 1px); /* All other browsers */
+}
+h1.headingL, h2.headingL, h3.headingL {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height:3.5rem;
+  color:var(--color6);
+}
+body {
+  padding:0;
+  /* padding:0 1rem; */
+  text-rendering: optimizeSpeed;
+  text-align:left; 
+  font-family: var(--sansserif);
+  background-color: var(--color3);
+  background-image:url(./assets/images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  color:var(--color1);
+}
+.main-container {
+  max-width:100%;
+  /* max-width:19.25rem; */
+  display:grid;
+  justify-items:center;
+  margin: 0 auto;
+  position:relative;
+  padding:0;
+}
+
+header, footer{
+  max-width:100%;
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+footer p{
+  text-align:center;
+  color: var(--color4);
+  font-size:0.8rem;
+  line-height: 1.5rem;
+}
+footer a{
+  text-align:center;
+  color: var(--color6);
+  font-size:0.8rem;
+}
+
+
+@media screen and (min-width:40rem) and (max-width:60rem) {
+  
+}
+@media screen and (min-width:50rem){
+  .main-container{
+    max-width:100%;
+    min-height:calc(100vh - 3rem);
+  }
+}
+@media screen and (min-width:73.5rem){
+ 
+  .main-container{
+    max-width:90rem;
+  }
+  
+}
+
