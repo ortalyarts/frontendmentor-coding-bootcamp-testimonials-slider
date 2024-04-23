@@ -60,7 +60,7 @@
 }
   
   .slide-arrow:hover,
-  .slide-arrow:focus {
+  .slide-arrow:focus-visible {
     background:var(--color2);
   }
   
